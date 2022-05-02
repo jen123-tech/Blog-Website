@@ -1,0 +1,127 @@
+/* Content Style*/
+.content {
+    min-height: 80vh;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content a {
+    background-color: #1abc9c;
+    padding: 5px 15px;
+    border: 1px solid #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    background-color: #81beb2;
+    border: 1px solid #81beb2;
+}
+
+.card-content .card-date {
+    margin: 0;
+    color: #918989;
+    font-size: 12px;
+}
+
+.card-content h2 {
+    margin-bottom: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Post Style*/
+.post-main {
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.content-post {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 1fr) 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-post img {
+    width: 100%;
+}
+
+.content-post h1 {
+    font-size: 40px;
+}
+
+.content-post figure {
+    margin: 0;
+    grid-column: 1 / -1;
+}
+
+.content-post p,  .content-post h1, .content-post .post-author, .content-post blockquote{
+    grid-column: 2 / -2;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+}
+
+.post-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.post-author-details {
+    margin-left: 20px;
+}
+
+.post-author-details p {
+    margin: 0;
+}
+
+.post-author-details .post-author-name {
+    color: #1abc9c;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.post-author-details .post-author-date {
+    color: #918989;
+    font-size: 12px;
+}
+
+.post-share {
+    grid-column: 1 / span 1;
+}
+
+.post-share ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.post-share img {
+    width: 40px;
+    padding: 5px;
+}
